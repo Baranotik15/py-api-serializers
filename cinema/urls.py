@@ -1,6 +1,5 @@
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
-
 from .views import (
     ActorViewSet,
     GenreViewSet,
@@ -8,7 +7,6 @@ from .views import (
     MovieViewSet,
     MovieSessionViewSet,
 )
-
 
 router = DefaultRouter()
 router.register('cinema/actors', ActorViewSet)
