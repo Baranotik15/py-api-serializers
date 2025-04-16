@@ -9,11 +9,11 @@ from .views import (
 )
 
 router = DefaultRouter()
-router.register('cinema/actors', ActorViewSet)
-router.register('cinema/genres', GenreViewSet)
-router.register('cinema/cinema_halls', CinemaHallViewSet)
-router.register('cinema/movies', MovieViewSet)
-router.register('cinema/movie_sessions', MovieSessionViewSet)
+router.register("cinema/actors", ActorViewSet)
+router.register("cinema/genres", GenreViewSet)
+router.register("cinema/cinema_halls", CinemaHallViewSet)
+router.register("cinema/movies", MovieViewSet)
+router.register("cinema/movie_sessions", MovieSessionViewSet)
 
 app_name = "cinema"
 
