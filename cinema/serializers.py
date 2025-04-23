@@ -117,6 +117,7 @@ class MovieSessionSerializer(serializers.ModelSerializer):
     def get_cinema_hall_capacity(self, obj):
         return obj.cinema_hall.capacity
 
+
 class MovieSessionDetailSerializer(serializers.ModelSerializer):
     movie = MovieSerializerForSession()
     cinema_hall = CinemaHallSerializer()
